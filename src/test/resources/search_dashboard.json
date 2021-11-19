@@ -1,0 +1,24 @@
+[
+    {
+        "id": 2,
+        "uid": "e-Eo-jS7k",
+        "title": "test1",
+        "uri": "db/new-dashboard-copy",
+        "url": "/d/e-Eo-jS7k/new-dashboard-copy",
+        "slug": "",
+        "type": "dash-db",
+        "tags": [],
+        "isStarred": false
+    },
+    {
+        "id": 3,
+        "uid": "yxQuajInk",
+        "title": "test2",
+        "uri": "db/new-dashboard-copy2",
+        "url": "/d/yxQuajInk/new-dashboard-copy2",
+        "slug": "",
+        "type": "dash-db",
+        "tags": [],
+        "isStarred": false
+    }
+]

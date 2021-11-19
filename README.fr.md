@@ -7,12 +7,11 @@
 
 ## Introduction
 
-This plugin let display one or more Grafana dashboards into the back office.
+Ce plugin permet d'afficher un ou plusieurs tableaux de bord Grafana dans le back office.
 
 ## Configuration
 
-URL of the Grafana server should be defined into the **grafana.properties** .
-Vous devez modifier votre configuration grafana afin d'autoriser les iframes et l'acc√®s anonyme si l'authentification est activ√©e.
+L'URL du serveur Grafana doit Ítre dÈfinie dans le fichier **grafana.properties** .
 
 
 [Maven documentation and reports](https://dev.lutece.paris.fr/plugins/plugin-grafana/)

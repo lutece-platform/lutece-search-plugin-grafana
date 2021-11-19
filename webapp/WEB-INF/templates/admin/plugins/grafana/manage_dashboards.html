@@ -1,0 +1,40 @@
+<@row>
+    <@columns>
+        <@box color='primary'>
+            <@boxHeader title='#i18n{grafana.manage_dashboard.title}' boxTools=true>
+                <@aButton href='jsp/admin/plugins/grafana/ManageDashboards.jsp?action=importDashboards' buttonIcon='plus'
+                    title='#i18n{grafana.manage_dashboard.buttonImport}' hideTitle=['xs','sm'] size='sm' />
+            </@boxHeader>
+            <@boxBody>
+                <@table>
+                    <tr>
+                        <input type="hidden" id="id" name="id" />
+                        <th>#i18n{grafana.manage_dashboards.columnIdGrafanaDashboard}</th>
+                        <th>#i18n{grafana.manage_dashboards.columnTitle}</th>
+                        <th>#i18n{grafana.manage_dashboards.columnActions}</th>
+                    </tr>
+                    <@tableHeadBodySeparator />
+                    <#list dashboard_list as dashboard>
+                        <tr>
+                            <input type="hidden" id="id" name="id" />
+                            <td>
+                                ${dashboard.idGrafanaDashboard}
+                            </td>
+                            <td>
+                                ${dashboard.title}
+                            </td>
+                            <td>
+                                <a href="jsp/admin/plugins/grafana/ManageDashboards.jsp?action=confirmRemoveDashboard&id_dashboard=${dashboard.id}"
+                                    class="btn btn-danger btn-sm" title="#i18n{portal.util.labelDelete}">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </#list>
+                </@table>
+                <@paginationAdmin paginator=paginator combo=1 showcount=0 />
+            </@boxBody>
+        </@box>
+    </@columns>
+</@row>
+<@scrollTopBtn />

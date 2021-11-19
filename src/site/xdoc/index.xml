@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Plugin Grafana</title>
+    </properties>
+    <body>
+        <section name="Plugin Grafana">
+            
+            <subsection name="Introduction">
+                <p>
+                    This plugin let display one or more Grafana dashboards into the back office.
+                </p>
+            </subsection>
+            <subsection name="Configuration">
+                <p>
+                    URL of the Grafana server should be defined into the <b>grafana.properties</b>.
+                    ⚠ You need to modify your Grafana configuration to allow iframes and anonymous access if authentication is enabled.
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>
+

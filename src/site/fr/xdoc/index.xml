@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Plugin Grafana</title>
+    </properties>
+    <body>
+        <section name="Plugin Grafana">
+            <subsection name="Introduction">
+                <p>
+                    Ce plugin permet d'afficher un ou plusieurs tableaux de bord Grafana dans le back office. 
+                </p>
+            </subsection>
+            <subsection name="Configuration">
+                <p>
+                    L'URL du serveur Grafana doit être définie dans le fichier<b>grafana.properties</b>.
+                    ⚠ Vous devez modifier votre configuration Grafana afin d'autoriser les iframes et l'accès anonyme si l'authentification est activée.
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>
+
